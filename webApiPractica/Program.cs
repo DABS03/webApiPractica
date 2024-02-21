@@ -10,9 +10,10 @@ builder.Services.AddControllers();
 //Inyección por dependencia del string de conexión al contexto
 builder.Services.AddDbContext<equiposContext>(options =>
     options.UseSqlServer(
-            builder.Configuration.GetConnectionString("equiposDbConnection")
-        )
-    );
+        builder.Configuration.GetConnectionString("equiposDbConnection")
+    )
+);
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
