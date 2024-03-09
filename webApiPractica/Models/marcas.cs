@@ -6,7 +6,7 @@ namespace webApiPractica.Models
     {
         [Key]
         public int id_marcas { get; set; }
-        public string nombre_marca { get; set; }
-        public bool estado { get; set; }
+        public string? nombre_marca { get; set; }
+        public bool? estado { get; set; }
     }
 }
